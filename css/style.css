@@ -1,0 +1,35 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; /* Base Blanche */
+    color: #1f2937; /* Gris-800 pour texte foncé */
+    scroll-behavior: smooth;
+}
+
+/* Couleur d'accent Vert Froid/Sarcelle (Teal-400) */
+.text-accent { color: #2dd4bf; } /* Teal-400 */
+.bg-accent { background-color: #2dd4bf; } /* Teal-400 */
+.border-accent { border-color: #2dd4bf; } /* Teal-400 */
+.hover-bg-accent:hover { background-color: #14b8a6; } /* Teal-500 pour le survol */
+
+/* Placeholder d'arrière-plan Hero (Aspect propre, médical et apaisant) */
+.hero-bg {
+    background-image: url('https://placehold.co/1200x800/e6fffa/2dd4bf?text=BIEN-ETRE+ET+SANTE');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Animation pour les cartes de produits */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(45, 212, 191, 0.2), 0 4px 6px -2px rgba(45, 212, 191, 0.1);
+}
+
+/* Styles pour les liens de navigation actifs (si nécessaire, pour un futur JS) */
+.nav-link.active {
+    font-weight: bold;
+    color: #14b8a6; /* Teal-500 pour lien actif */
+    border-bottom: 2px solid #14b8a6;
+}
